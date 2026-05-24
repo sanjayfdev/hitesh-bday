@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Divyuu Baby 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --pink: #ff6b9d;
+      --rose: #ff3d7f;
+      --lilac: #c56cd6;
+      --cream: #fff8f9;
+      --gold: #ffd700;
+      --soft: #ffe0ec;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: var(--cream);
+      overflow-x: hidden;
+      cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><text y='20' font-size='20'>💖</text></svg>"), auto;
+    }
+
+    /* ── FLOATING HEARTS BACKGROUND ── */
+    #hearts-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .heart-float {
+      position: absolute;
+      bottom: -60px;
+      font-size: 1.4rem;
+      animation: floatUp linear infinite;
+      opacity: 0;
+    }
+    @keyframes floatUp {
+      0%   { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+      100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+    }
+
+    /* ── SECTIONS ── */
+    section {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    /* ── HERO ── */
+    #hero {
+      background: linear-gradient(160deg, #ffe0ec 0%, #fce4ff 50%, #ffe0ec 100%);
+      text-align: center;
+    }
+    .hero-photo {
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid white;
+      box-shadow: 0 0 0 4px var(--pink), 0 20px 50px rgba(255,107,157,0.4);
+      animation: photoFloat 3s ease-in-out infinite;
+      margin-bottom: 28px;
+    }
+    @keyframes photoFloat {
+      0%,100% { transform: translateY(0); }
+      50%      { transform: translateY(-12px); }
+    }
+    .hero-title {
+      font-family: 'Pacifico', cursive;
+      font-size: clamp(2.2rem, 7vw, 4rem);
+      color: var(--rose);
+      text-shadow: 2px 4px 12px rgba(255,61,127,0.25);
+      animation: popIn .8s cubic-bezier(.22,1.5,.4,1) both;
+    }
+    .hero-subtitle {
+      font-family: 'Dancing Script', cursive;
+      font-size: clamp(1.4rem, 4vw, 2.2rem);
+      color: var(--lilac);
+      margin-top: 10px;
+      animation: popIn 1s .2s cubic-bezier(.22,1.5,.4,1) both;
+    }
+    .hero-date {
+      margin-top: 18px;
+      background: white;
+      border-radius: 50px;
+      padding: 10px 28px;
+      font-size: 1.1rem;
+      color: var(--rose);
+      font-weight: 700;
+      box-shadow: 0 4px 20px rgba(255,107,157,0.2);
+      animation: popIn 1s .4s cubic-bezier(.22,1.5,.4,1) both;
+    }
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(.5) translateY(30px); }
+      to   { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .scroll-hint {
+      margin-top: 50px;
+      font-size: .9rem;
+      color: #b98daa;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%,100% { transform: translateY(0); }
+      50%      { transform: translateY(8px); }
+    }
+
+    /* ── WISHES ── */
+    #wishes {
+      background: linear-gradient(160deg, #fff0f7 0%, #f7e8ff 100%);
+    }
+    .section-title {
+      font-family: 'Pacifico', cursive;
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      color: var(--rose);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 22px;
+      max-width: 900px;
+      width: 100%;
+    }
+    .wish-card {
+      background: white;
+      border-radius: 24px;
+      padding: 30px 24px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(255,107,157,0.12);
+      transition: transform .3s, box-shadow .3s;
+      animation: fadeUp .6s ease both;
+    }
+    .wish-card:hover {
+      transform: translateY(-8px) rotate(1deg);
+      box-shadow: 0 16px 40px rgba(255,107,157,0.22);
+    }
+    .wish-card .emoji { font-size: 2.8rem; margin-bottom: 14px; display: block; }
+    .wish-card h3 { font-size: 1.1rem; color: var(--rose); margin-bottom: 8px; font-weight: 700; }
+    .wish-card p  { font-size: .95rem; color: #777; line-height: 1.6; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── GALLERY ── */
+    #gallery {
+      background: linear-gradient(160deg, #fce4ff 0%, #ffe0ec 100%);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      max-width: 800px;
+      width: 100%;
+      height: 100%;
+    }
+    .gallery-item {
+      border-radius: 20px;
+      overflow: hidden;
+      aspect-ratio: 1;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      box-shadow: 0 6px 20px rgba(255,61,127,0.15);
+      transition: transform .3s;
+    }
+    .gallery-item:hover { transform: scale(1.06) rotate(-1deg); }
+    .gallery-item img {
+      width: 100%; height: 100%;
+      object-position: center;
+      display: block;
+    }
+    .gallery-item .overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(255,61,127,.45), transparent);
+      display: flex; align-items: flex-end; justify-content: center;
+      padding: 10px;
+      font-size: 1.3rem;
+      opacity: 0; transition: opacity .3s;
+    }
+    .gallery-item:hover .overlay { opacity: 1; }
+
+    /* ── CAROUSEL SECTION ── */
+    #carousel-section {
+      background: linear-gradient(160deg, #fff0f7 0%, #fce4ff 100%);
+      min-height: 80vh;
+    }
+    .carousel-wrapper {
+      position: relative;
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .carousel-track {
+      position: relative;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(255,61,127,0.25);
+    }
+    .carousel-slide {
+      display: none;
+      position: relative;
+    }
+    .carousel-slide.active { display: block; }
+    .carousel-slide img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      display: block;
+    }
+    .carousel-caption {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: linear-gradient(to top, rgba(255,61,127,0.7), transparent);
+      padding: 20px;
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.4rem;
+      color: white;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: white;
+      border: none;
+      border-radius: 50%;
+      width: 48px; height: 48px;
+      font-size: 1.4rem;
+      cursor: pointer;
+      box-shadow: 0 4px 18px rgba(255,61,127,0.25);
+      z-index: 10;
+      transition: transform .2s, box-shadow .2s;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--rose);
+    }
+    .carousel-btn:hover {
+      transform: translateY(-50%) scale(1.12);
+      box-shadow: 0 8px 28px rgba(255,61,127,0.4);
+    }
+    .carousel-prev { left: -24px; }
+    .carousel-next { right: -24px; }
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 18px;
+    }
+    .dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: #ffc2d8;
+      cursor: pointer;
+      transition: background .3s, transform .2s;
+    }
+    .dot.active {
+      background: var(--rose);
+      transform: scale(1.3);
+    }
+    .carousel-counter {
+      text-align: center;
+      margin-top: 10px;
+      font-size: .9rem;
+      color: #b98daa;
+      font-weight: 600;
+    }
+
+    /* ── VIDEOS SECTION ── */
+    #videos {
+      background: linear-gradient(160deg, #ffe0ec 0%, #f7e8ff 100%);
+      min-height: 80vh;
+    }
+    .videos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 960px;
+      width: 100%;
+    }
+    .video-card {
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(255,107,157,0.18);
+      transition: transform .3s, box-shadow .3s;
+      animation: fadeUp .6s ease both;
+    }
+    .video-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 50px rgba(255,107,157,0.28);
+    }
+    .video-card video {
+      width: 100%;
+      aspect-ratio: 16/9;
+      display: block;
+      background: #f9e0ec;
+    }
+    .video-card-label {
+      padding: 14px 18px;
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.25rem;
+      color: var(--rose);
+    }
+
+    /* ── REASONS ── */
+    #reasons {
+      background: linear-gradient(160deg, #fff0f7 0%, #f0f4ff 100%);
+    }
+    .reasons-list {
+      max-width: 600px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .reason-item {
+      background: white;
+      border-radius: 50px;
+      padding: 16px 28px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      box-shadow: 0 4px 18px rgba(255,107,157,0.1);
+      font-size: 1rem;
+      color: #555;
+      font-weight: 600;
+      animation: slideIn .5s ease both;
+    }
+    .reason-item span { font-size: 1.5rem; flex-shrink: 0; }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-40px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+
+    /* ── PROPOSAL ── */
+    #proposal {
+      background: linear-gradient(160deg, #ffe0ec 0%, #fce4ff 50%, #ffe0ec 100%);
+      text-align: center;
+    }
+    .proposal-photo {
+      width: 160px; height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      box-shadow: 0 0 0 4px var(--lilac), 0 15px 40px rgba(197,108,214,0.35);
+      margin-bottom: 28px;
+      animation: spin3d 6s ease-in-out infinite;
+    }
+    @keyframes spin3d {
+      0%,100% { transform: perspective(400px) rotateY(0deg); }
+      50%      { transform: perspective(400px) rotateY(15deg); }
+    }
+    .proposal-q {
+      font-family: 'Pacifico', cursive;
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      color: var(--rose);
+      margin-bottom: 14px;
+      text-shadow: 2px 4px 12px rgba(255,61,127,0.2);
+    }
+    .proposal-funny {
+      font-family: 'Dancing Script', cursive;
+      font-size: clamp(1.1rem, 3vw, 1.6rem);
+      color: var(--lilac);
+      margin-bottom: 40px;
+      max-width: 500px;
+    }
+
+    /* ── BUTTON WRAP ── */
+    .btn-wrap {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      min-height: 160px;
+      width: 100%;
+      max-width: 500px;
+      position: relative;
+    }
+    .btn {
+      padding: 16px 40px;
+      border-radius: 50px;
+      border: none;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform .2s, box-shadow .2s;
+    }
+    #yes-btn {
+      background: linear-gradient(135deg, var(--rose), var(--lilac));
+      color: white;
+      box-shadow: 0 8px 25px rgba(255,61,127,0.4);
+      position: relative;
+      z-index: 2;
+    }
+    #yes-btn:hover {
+      transform: scale(1.12);
+      box-shadow: 0 12px 35px rgba(255,61,127,0.55);
+    }
+    #no-btn {
+      background: white;
+      color: #aaa;
+      box-shadow: 0 4px 14px rgba(0,0,0,.08);
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      transform: translateX(80px);
+      transition: transform .25s cubic-bezier(.22,1.5,.4,1), top .25s cubic-bezier(.22,1.5,.4,1), left .25s cubic-bezier(.22,1.5,.4,1);
+      white-space: nowrap;
+      z-index: 1;
+    }
+
+    /* ── YES SCREEN ── */
+    #yes-screen {
+      display: none;
+      background: linear-gradient(160deg, #ffe0ec, #fce4ff);
+      text-align: center;
+    }
+    .yes-title {
+      font-family: 'Pacifico', cursive;
+      font-size: clamp(2rem, 7vw, 4rem);
+      color: var(--rose);
+      animation: popIn .7s cubic-bezier(.22,1.5,.4,1) both;
+    }
+    .yes-subtitle {
+      font-family: 'Dancing Script', cursive;
+      font-size: clamp(1.3rem, 4vw, 2rem);
+      color: var(--lilac);
+      margin-top: 12px;
+      animation: popIn .7s .15s cubic-bezier(.22,1.5,.4,1) both;
+    }
+    .confetti-burst {
+      position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none; z-index: 999;
+    }
+
+    /* ── SPARKLE TRAIL ── */
+    .sparkle {
+      position: fixed;
+      pointer-events: none;
+      font-size: 1.1rem;
+      z-index: 9999;
+      animation: sparkleAnim .8s forwards;
+    }
+    @keyframes sparkleAnim {
+      0%   { opacity: 1; transform: scale(1) translateY(0); }
+      100% { opacity: 0; transform: scale(0) translateY(-30px); }
+    }
+
+    /* ── RIBBON BANNER ── */
+    .ribbon {
+      background: linear-gradient(90deg, var(--rose), var(--lilac), var(--rose));
+      color: white;
+      font-family: 'Pacifico', cursive;
+      font-size: 1rem;
+      padding: 12px 0;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+    }
+    .ribbon-inner {
+      display: inline-block;
+      animation: ribbonScroll 18s linear infinite;
+    }
+    @keyframes ribbonScroll {
+      from { transform: translateX(100vw); }
+      to   { transform: translateX(-100%); }
+    }
+
+    /* ── CAKE ANIMATION ── */
+    .cake-wrap {
+      font-size: 5rem;
+      animation: cakePulse 1.5s ease-in-out infinite;
+      margin: 20px 0;
+    }
+    @keyframes cakePulse {
+      0%,100% { transform: scale(1) rotate(-3deg); }
+      50%      { transform: scale(1.15) rotate(3deg); }
+    }
+
+    .music-control {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 1000;
+    }
+    #musicBtn {
+      width: 60px; height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ff6b9d, #ffa07a);
+      border: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      box-shadow: 0 5px 20px rgba(255,107,157,0.5);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #musicBtn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 30px rgba(255,107,157,0.7);
+    }
+    #musicBtn.playing { animation: pulse 1.5s ease infinite; }
+
+    /* ── SCROLLBAR ── */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--cream); }
+    ::-webkit-scrollbar-thumb { background: var(--pink); border-radius: 10px; }
+
+    /* ════════════════════════════════════
+       MOBILE RESPONSIVE FIXES
+    ════════════════════════════════════ */
+    @media (max-width: 600px) {
+      .hero-photo { width: 150px; height: 150px; }
+      .hero-title { font-size: clamp(1.6rem, 8vw, 2.4rem); line-height: 1.3; }
+      .hero-date { font-size: 0.95rem; padding: 8px 18px; }
+      .cards-grid { grid-template-columns: 1fr; gap: 16px; }
+      .wish-card { padding: 22px 18px; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .reason-item { border-radius: 20px; padding: 14px 18px; font-size: 0.9rem; }
+      .section-title { font-size: clamp(1.4rem, 6vw, 2rem); margin-bottom: 24px; }
+      section { padding: 50px 16px; }
+      .proposal-photo { width: 130px; height: 130px; }
+      .proposal-funny { font-size: clamp(1rem, 4vw, 1.3rem); padding: 0 8px; }
+      .btn-wrap { min-height: 200px; max-width: 340px; }
+      .btn { padding: 14px 32px; font-size: 1rem; }
+      #no-btn { top: 90px; left: 50%; transform: translateX(40px); }
+      #yes-screen .hero-photo { width: 130px !important; height: 130px !important; }
+      #yes-screen div[style*="display: flex"] { flex-wrap: wrap; justify-content: center; gap: 10px; }
+      .music-control { bottom: 1rem; right: 1rem; }
+      #musicBtn { width: 48px; height: 48px; font-size: 1.4rem; }
+      .cake-wrap { font-size: 3.5rem; }
+      .carousel-prev { left: -16px; }
+      .carousel-next { right: -16px; }
+      .carousel-btn { width: 38px; height: 38px; font-size: 1.1rem; }
+      .videos-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 380px) {
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+      .hero-photo { width: 130px; height: 130px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ░░ FLOATING HEARTS BACKGROUND ░░ -->
+<div id="hearts-bg"></div>
+
+<!-- ░░ RIBBON ░░ -->
+<div class="ribbon">
+  <span class="ribbon-inner">
+    🎀 Happy Birthday Divyuu Baby 🎀 &nbsp;&nbsp;&nbsp;
+    💖 Tu Meri Sabse Badi Happiness Hai 💖 &nbsp;&nbsp;&nbsp;
+    🌸 Aaj Ka Din Sirf Tere Liye Hai 🌸 &nbsp;&nbsp;&nbsp;
+    🎂 Wishing You All The Happiness 🎂 &nbsp;&nbsp;&nbsp;
+    ✨ Forever &amp; Always Yours ✨ &nbsp;&nbsp;&nbsp;
+  </span>
+</div>
+
+<!-- ░░ HERO ░░ -->
+<section id="hero">
+  <img class="hero-photo"
+       src="./images/1 (18).jpeg"
+       alt="My Love"/>
+  <h1 class="hero-title">Happy Birthday, Divyuu Baby! 🎉💖</h1>
+  <p class="hero-subtitle">The day the world became more beautiful 🌷</p>
+  <div class="hero-date">🗓️ Your Special Day — Forever In My Heart</div>
+  <div class="scroll-hint">Scroll down for a surprise 👇💕</div>
+</section>
+
+<!-- ░░ BIRTHDAY WISHES ░░ -->
+<section id="wishes">
+  <h2 class="section-title">🎁 Birthday Wishes For You</h2>
+  <div class="cards-grid">
+
+    <div class="wish-card" style="animation-delay:.1s">
+      <span class="emoji">💖</span>
+      <h3>Happy Birthday My Divyuu Bby 🎂</h3>
+      <p>Tu meri life ka sabse beautiful part hai. Chahe tu kitna bhi gussa kare 😤, par tera care aur pyar hi meri sabse badi happiness hai 🫶 Bas hamesha mere sath rehna, meri cute si fighting queen 👑💞</p>
+    </div>
+
+    <div class="wish-card" style="animation-delay:.2s">
+      <span class="emoji">🌸</span>
+      <h3>To My Angry But Most Cute Girl 😚</h3>
+      <p>Tera har nakhra mujhe aur bhi jyada special lagta hai 😅❤️ Jab tu gussa hoti hai na, tab bhi duniya ki sabse pyari ladki lagti hai 🥺✨ Love you forever Divyuu Bby 💖🌍</p>
+    </div>
+
+    <div class="wish-card" style="animation-delay:.3s">
+      <span class="emoji">✨</span>
+      <h3>Happy Birthday Jaan 🎉</h3>
+      <p>Pata nahi mene life me kya acha kaam kiya tha jo tu meri life me aayi 😌❤️ Teri smile meri weakness hai aur tera attitude meri favourite problem 😅💫 Stay happy always meri bacchi 🫂💖</p>
+    </div>
+
+    <div class="wish-card" style="animation-delay:.4s">
+      <span class="emoji">🥹</span>
+      <h3>Divyuu Bby 💞</h3>
+      <p>Tu sirf meri girlfriend nahi, meri peace, meri smile aur meri daily happiness hai 🌎💞 Haan thoda jyada gussa karti hai 😤😂 but fir bhi I love you endlessly ❤️ Aaj ka din sirf tere liye special nahi, mere liye bhi bohot important hai 🎂✨</p>
+    </div>
+
+    <div class="wish-card" style="animation-delay:.5s">
+      <span class="emoji">🌹</span>
+      <h3>You Are My Sunshine 🌍</h3>
+      <p>Life feels so much better with you in it 🥹❤️ Your smile makes my day brighter, and your love makes my world complete 🌸✨ No matter how many fights we have, I'll always love you endlessly 💞</p>
+    </div>
+
+    <div class="wish-card" style="animation-delay:.6s">
+      <span class="emoji">🫶</span>
+      <h3>Forever Grateful 💌</h3>
+      <p>You are my peace, my comfort, and my favorite person forever 🫂❤️ I know you get angry quickly 😅 but that cute attitude is what makes you special to me 😚✨ I just want to see you happy every single day 💖</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ░░ GALLERY ░░ -->
+<section id="gallery">
+  <h2 class="section-title">📸 Sweet Memories</h2>
+  <div class="gallery-grid" id="gallery-grid">
+    <!-- Populated by JS with random picks from 60 photos -->
+  </div>
+</section>
+
+<!-- ░░ CAROUSEL SECTION ░░ -->
+<section id="carousel-section">
+  <h2 class="section-title">🎠 Our Special Moments</h2>
+  <div class="carousel-wrapper">
+    <div class="carousel-track" id="carousel-track">
+      <!-- Populated by JS with random picks from 60 photos -->
+      <!-- Prev / Next arrows -->
+      <button class="carousel-btn carousel-prev" onclick="changeSlide(-1)">&#8249;</button>
+      <button class="carousel-btn carousel-next" onclick="changeSlide(1)">&#8250;</button>
+    </div>
+
+    <div class="carousel-dots" id="carousel-dots"></div>
+    <p class="carousel-counter" id="carousel-counter">1 / 12</p>
+  </div>
+</section>
+
+<!-- ░░ VIDEOS SECTION ░░ -->
+<section id="videos">
+  <h2 class="section-title">🎬 Our Beautiful Moments</h2>
+  <div class="videos-grid">
+
+    <div class="video-card" style="animation-delay:.1s">
+      <!-- Rename your video file and update the src below -->
+      <video controls preload="metadata" poster="">
+        <source src="./videos/WhatsApp Video 2026-05-24 at 17.18.12.mp4 type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-card-label">💖 Our First Memory Together</div>
+    </div>
+
+    <div class="video-card" style="animation-delay:.25s">
+      <video controls preload="metadata" poster="">
+        <source src="./videos/WhatsApp Video 2026-05-24 at 17.47.27.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-card-label">🌸 That Smile That Stole My Heart</div>
+    </div>
+
+    <div class="video-card" style="animation-delay:.4s">
+      <video controls preload="metadata" poster="">
+        <source src="./videos/WhatsApp Video 2026-05-24 at 17.47.33.mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-card-label">✨ You Are My Favorite Notification 📱💖</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ░░ REASONS ░░ -->
+<section id="reasons">
+  <h2 class="section-title">💝 Why I Love My Divyuu Baby</h2>
+  <div class="reasons-list">
+    <div class="reason-item" style="animation-delay:.1s"><span>😤</span> Tera gussa bhi cute lagta hai mujhe — no one makes angry look this adorable 🐦💕</div>
+    <div class="reason-item" style="animation-delay:.2s"><span>🎯</span> Tu sirf meri girlfriend nahi, meri peace, meri smile aur meri daily happiness hai 🌎💞</div>
+    <div class="reason-item" style="animation-delay:.3s"><span>🌟</span> Teri smile meri weakness hai aur tera attitude meri favourite problem 😅💫</div>
+    <div class="reason-item" style="animation-delay:.4s"><span>📵</span> Tu reply nahi karti for hours… but I still check my phone every 2 minutes like a fool 😭</div>
+    <div class="reason-item" style="animation-delay:.5s"><span>🐢</span> Tera gussa bhi cute lagta hai — "You are my favorite notification forever 📱💖"</div>
+    <div class="reason-item" style="animation-delay:.6s"><span>😒</span> No matter kitni fights ho, I'll always choose you ❤️ — simping level: legendary</div>
+    <div class="reason-item" style="animation-delay:.7s"><span>🤡</span> Tu ignore kare, main panic. Tu reply kare, main smile idiot ki tarah. Tu owns me completely 😅</div>
+    <div class="reason-item" style="animation-delay:.8s"><span>📞</span> One "hey" from you after hours of silence and I instantly forget I was even upset 😤➡️🥰</div>
+  </div>
+</section>
+
+<!-- ░░ PROPOSAL ░░ -->
+<section id="proposal">
+  <div class="cake-wrap">🎂</div>
+  <img class="proposal-photo"
+       src="./images/1 (11).jpeg"
+       alt="Us Together"/>
+
+  <h2 class="proposal-q">I just want to be honest with you… 🥺</h2>
+
+  <p class="proposal-funny">
+    Tu meri life ka sabse beautiful part hai 🫶<br><br>
+    Chahe tu kitna bhi gussa kare 😤, par teri smile hi meri sabse badi khushi hai.<br><br>
+    Main sirf itna kehna chahta hoon — <strong>tu meri Divyuu Baby hai</strong> 🌸<br>
+    Aur hamesha rehegi, no matter what. 💌<br><br>
+    So tell me, Divyuu Baby… 💖<br>
+    <strong>Would you be mine? 🙈</strong>
+  </p>
+
+  <div class="btn-wrap" id="btn-wrap">
+    <button class="btn" id="yes-btn" onclick="sayYes()"> Yes 💖</button>
+    <button class="btn" id="no-btn" onmouseenter="runAway()" ontouchstart="runAway()">No 😅</button>
+  </div>
+  <p id="no-taunt" style="margin-top:20px;color:#c56cd6;font-family:'Dancing Script',cursive;font-size:1.2rem;min-height:30px;"></p>
+</section>
+
+<!-- ░░ YES SCREEN ░░ -->
+<section id="yes-screen">
+  <canvas class="confetti-burst" id="confetti-canvas"></canvas>
+  <div class="cake-wrap">🥳</div>
+
+  <h2 class="yes-title">Meri Divyuu Bby 💕🎉</h2>
+  <p class="yes-subtitle">Main jaanta tha… dil kabhi jhoot nahi bolta 😌✨</p>
+
+  <br>
+  <div style="display: flex;">
+    <img class="hero-photo"
+         src="./images/together/together (18).jpeg"
+         alt="My Queen" style="width:180px;height:180px;border-color:#ffd700;"/>
+    <img class="hero-photo"
+         src="./images/together/together (2).jpeg"
+         alt="My Queen" style="width:180px;height:180px;border-color:#ffd700;"/>
+         <img class="hero-photo"
+         src="./images/together/together (19).jpeg"
+         alt="My Queen" style="width:180px;height:180px;border-color:#ffd700;"/>
+     <img class="hero-photo"
+         src="./images/together/together (17).jpeg"
+         alt="My Queen" style="width:180px;height:180px;border-color:#ffd700;"/>
+  </div>
+
+  <p style="margin-top:22px;font-family:'Dancing Script',cursive;font-size:1.6rem;color:var(--lilac)">
+    Tera gussa bhi cute lagta hai mujhe 😚❤️<br>
+    <span style="font-size:1.15rem;">Divyuu Bby = My Happiness 🫶✨</span>
+  </p>
+
+  <p style="margin-top:10px;font-size:1rem;color:#b98daa;max-width:440px;text-align:center;line-height:1.8">
+    Thank you for loving me, fighting with me, and staying by my side always 🌍❤️<br>
+    I promise to always make you smile, keep you happy,<br>
+    and never ever make you regret saying yes to this idiot. 😂💖
+  </p>
+</section>
+
+<!-- Music Control -->
+<div class="music-control">
+  <button id="musicBtn" onclick="toggleMusic()">🔊</button>
+</div>
+
+<!-- Audio Element -->
+<audio id="birthdayMusic" loop>
+  <source src="./happy-birthday.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  /* ── FLOATING HEARTS ── */
+  const heartEmojis = ['💖','💕','🌸','💗','✨','🌷','💝','🦋','🌟','💘'];
+  const bg = document.getElementById('hearts-bg');
+  let musicPlaying = false;
+
+  function spawnHeart() {
+    const h = document.createElement('div');
+    h.className = 'heart-float';
+    h.textContent = heartEmojis[Math.floor(Math.random() * heartEmojis.length)];
+    h.style.left = Math.random() * 100 + 'vw';
+    h.style.fontSize = (.8 + Math.random() * 1.4) + 'rem';
+    const dur = 6 + Math.random() * 8;
+    h.style.animationDuration = dur + 's';
+    h.style.animationDelay = Math.random() * 4 + 's';
+    bg.appendChild(h);
+    setTimeout(() => h.remove(), (dur + 4) * 1000);
+  }
+  setInterval(spawnHeart, 400);
+  for (let i = 0; i < 15; i++) spawnHeart();
+
+  /* ── SPARKLE TRAIL ── */
+  const sparkles = ['✨','💖','🌸','⭐','💫','🦋'];
+  function createSparkle(x, y) {
+    const s = document.createElement('div');
+    s.className = 'sparkle';
+    s.textContent = sparkles[Math.floor(Math.random() * sparkles.length)];
+    s.style.left = x + 'px';
+    s.style.top  = y + 'px';
+    document.body.appendChild(s);
+    setTimeout(() => s.remove(), 800);
+  }
+  document.addEventListener('mousemove', e => {
+    if (Math.random() > .6) return;
+    createSparkle(e.clientX, e.clientY);
+  });
+  document.addEventListener('touchmove', e => {
+    if (Math.random() > .5) return;
+    const touch = e.touches[0];
+    createSparkle(touch.clientX, touch.clientY);
+  }, { passive: true });
+  document.addEventListener('touchstart', e => {
+    const touch = e.touches[0];
+    createSparkle(touch.clientX, touch.clientY);
+  }, { passive: true });
+
+  /* ── SCROLL FADE-IN ── */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.style.opacity = '1';
+    });
+  }, { threshold: .15 });
+  document.querySelectorAll('.wish-card, .reason-item, .video-card').forEach(el => {
+    el.style.opacity = '0';
+    observer.observe(el);
+  });
+
+  /* ── BUILD GALLERY & CAROUSEL FROM 60 PHOTOS ── */
+  (function buildMedia() {
+    // All 60 photo numbers
+    const all = Array.from({length: 60}, (_, i) => i + 1);
+
+    // Fisher-Yates shuffle
+    function shuffle(arr) {
+      const a = [...arr];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    const shuffled = shuffle(all);
+
+    // Gallery: first 20 shuffled photos
+    const galleryNums = shuffled.slice(0, 20);
+    const galleryEmojis = ['💖','🌸','✨','💕','🎀','🦋','💗','🌷','💝','⭐','🥰','😚','🫶','💞','🌟','🌼','💫','🎵','🌈','🥺'];
+    const galleryEl = document.getElementById('gallery-grid');
+    galleryNums.forEach((n, i) => {
+      galleryEl.innerHTML += `
+        <div class="gallery-item">
+          <img src="./images/1 (${n}).jpeg" alt="Memory ${i+1}" loading="lazy"/>
+          <div class="overlay">${galleryEmojis[i % galleryEmojis.length]}</div>
+        </div>`;
+    });
+
+    // Carousel: next 12 shuffled photos (no overlap with gallery)
+    const carouselNums = shuffled.slice(20, 32);
+    const captions = [
+      "Divyuu Bby = My Happiness 🫶✨",
+      "Meri duniya tujhse start hoti hai 🌍💕",
+      "Tera gussa bhi cute lagta hai mujhe 😚❤️",
+      "You are my favorite person forever ❤️",
+      "No matter what happens, I'll always choose you 💖",
+      "Your smile is my daily happiness 😚✨",
+      "Tu sirf meri girlfriend nahi, meri peace hai 🌸",
+      "Teri smile meri weakness hai 💫",
+      "Forever grateful to have you in my life 🫶",
+      "Even your anger feels cute to me 😤💕",
+      "Hamesha mere sath rehna meri jaan 💞",
+      "Love you endlessly, Divyuu Bby 💖🌍",
+    ];
+    const carouselTrack = document.getElementById('carousel-track');
+    const prevBtn = carouselTrack.querySelector('.carousel-prev');
+    const nextBtn = carouselTrack.querySelector('.carousel-next');
+    // Remove buttons temporarily, insert slides, then re-append
+    carouselTrack.removeChild(prevBtn);
+    carouselTrack.removeChild(nextBtn);
+    carouselNums.forEach((n, i) => {
+      const div = document.createElement('div');
+      div.className = 'carousel-slide' + (i === 0 ? ' active' : '');
+      div.innerHTML = `
+        <img src="./images/1 (${n}).jpeg" alt="Moment ${i+1}" loading="lazy"/>
+        <div class="carousel-caption">${captions[i]}</div>`;
+      carouselTrack.appendChild(div);
+    });
+    carouselTrack.appendChild(prevBtn);
+    carouselTrack.appendChild(nextBtn);
+  })();
+
+  /* ── CAROUSEL ── */
+  let currentSlide = 0;
+  let slides = document.querySelectorAll('.carousel-slide');
+  const dotsContainer = document.getElementById('carousel-dots');
+  const counter = document.getElementById('carousel-counter');
+  let total = slides.length;
+
+  // Build dots
+  for (let i = 0; i < total; i++) {
+    const dot = document.createElement('div');
+    dot.className = 'dot' + (i === 0 ? ' active' : '');
+    dot.addEventListener('click', () => goToSlide(i));
+    dotsContainer.appendChild(dot);
+  }
+  counter.textContent = '1 / ' + total;
+
+  function updateCarousel() {
+    slides = document.querySelectorAll('.carousel-slide');
+    total = slides.length;
+    slides.forEach((s, i) => s.classList.toggle('active', i === currentSlide));
+    document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+    counter.textContent = (currentSlide + 1) + ' / ' + total;
+  }
+
+  function changeSlide(dir) {
+    currentSlide = (currentSlide + dir + total) % total;
+    updateCarousel();
+  }
+
+  function goToSlide(n) {
+    currentSlide = n;
+    updateCarousel();
+  }
+
+  // Auto-advance carousel every 4s
+  setInterval(() => changeSlide(1), 4000);
+
+  // Touch/swipe support for carousel
+  let touchStartX = 0;
+  const carouselTrack = document.querySelector('.carousel-track');
+  carouselTrack.addEventListener('touchstart', e => {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+  carouselTrack.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) changeSlide(diff > 0 ? 1 : -1);
+  }, { passive: true });
+
+  /* ── NO BUTTON RUNS AWAY ── */
+  const taunts = [
+    "Oops! That button is shy 😏",
+    "Divyuu Baby, you know the answer! 💖",
+    "The 'No' button doesn't live here 😂",
+    "Tera dil bhi haan kehta hai! 🤭",
+    "No is not an option today! 🎀",
+    "Tu mujhse pyar karti hai, trust it! 💕",
+    "Stop it, just click Haan! 😄",
+    "Divyuu Bby = My Happiness 🫶✨",
+  ];
+  let tauntIdx = 0;
+
+  function runAway() {
+    const btn = document.getElementById('no-btn');
+    const wrap = document.getElementById('btn-wrap');
+    const wRect = wrap.getBoundingClientRect();
+    const maxX = Math.min(wRect.width / 2 - 40, 120);
+    const maxY = Math.min(wRect.height - 90, 100);
+    const rx = (Math.random() - 0.5) * 2 * maxX;
+    const ry = 60 + Math.random() * maxY;
+    btn.style.left  = '50%';
+    btn.style.transform = `translate(calc(-50% + ${rx}px), ${ry}px)`;
+    btn.style.top = '0px';
+    document.getElementById('no-taunt').textContent = taunts[tauntIdx % taunts.length];
+    tauntIdx++;
+  }
+
+  /* ── YES BUTTON ── */
+  function sayYes() {
+    document.getElementById('proposal').style.display = 'none';
+    const ys = document.getElementById('yes-screen');
+    ys.style.display = 'flex';
+    launchConfetti();
+    setTimeout(launchConfetti, 1500);
+    setTimeout(launchConfetti, 3000);
+  }
+
+  /* ── CONFETTI ── */
+  function launchConfetti() {
+    const canvas = document.getElementById('confetti-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    const pieces = [];
+    const colors = ['#ff6b9d','#c56cd6','#ffd700','#ff3d7f','#fff','#a8edea'];
+    for (let i = 0; i < 180; i++) {
+      pieces.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height - canvas.height,
+        w: 8 + Math.random() * 8, h: 10 + Math.random() * 10,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        vx: (Math.random() - 0.5) * 5, vy: 2 + Math.random() * 4,
+        rot: Math.random() * 360, rspeed: (Math.random() - 0.5) * 8,
+      });
+    }
+    let frame = 0;
+    function draw() {
+      if (frame++ > 200) { ctx.clearRect(0,0,canvas.width,canvas.height); return; }
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      pieces.forEach(p => {
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.rot * Math.PI / 180);
+        ctx.fillStyle = p.color;
+        ctx.globalAlpha = Math.max(0, 1 - frame/200);
+        ctx.fillRect(-p.w/2, -p.h/2, p.w, p.h);
+        ctx.restore();
+        p.x += p.vx; p.y += p.vy; p.rot += p.rspeed;
+      });
+      requestAnimationFrame(draw);
+    }
+    draw();
+  }
+
+  /* ── MUSIC ── */
+  function toggleMusic() {
+    musicPlaying ? pauseMusic() : playMusic();
+  }
+  function playMusic() {
+    const music = document.getElementById('birthdayMusic');
+    const btn = document.getElementById('musicBtn');
+    music.play().then(() => {
+      musicPlaying = true;
+      btn.textContent = '🔊';
+      btn.classList.add('playing');
+    }).catch(() => {});
+  }
+  function pauseMusic() {
+    const music = document.getElementById('birthdayMusic');
+    const btn = document.getElementById('musicBtn');
+    music.pause();
+    musicPlaying = false;
+    btn.textContent = '🔇';
+    btn.classList.remove('playing');
+  }
+  document.addEventListener('DOMContentLoaded', () => playMusic());
+</script>
+</body>
+</html>
